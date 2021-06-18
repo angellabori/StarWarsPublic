@@ -1,0 +1,14 @@
+ 
+<div class=" card" style="width: 18rem;">
+    <!--<img class="card-img-top" src="../assets/img/{{film.episode_id}}.jpg" alt="Card image cap"> --> 
+      <div class="card-body">
+        <h5 class="card-title"><a href="#" class="card-link">{{people?.name}}</a></h5>
+       
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">eye color: {{people?.eye_color}}</li>
+        <li class="list-group-item">genere: {{people?.gender}}</li>
+        <li class="list-group-item">FILMS</li>
+        <app-film [film]='film' *ngFor="let film of people?.films"> </app-film>
+      </ul>
+    </div>

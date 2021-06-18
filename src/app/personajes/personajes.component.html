@@ -1,0 +1,18 @@
+<div class="panel-header panel-header-sm">
+</div>
+<div class="main-content">
+  <div class="row">
+    
+    <div class="col-sm-6 col-md-4 "  *ngFor="let character of characters   
+    |slice: (page-1) * pageSize : page * pageSize"> 
+    <app-character [character]="character"></app-character>
+    </div>
+    <div class="col-12 "> 
+    <ngb-pagination
+      [(page)]="page"
+      [pageSize]="pageSize"
+      [collectionSize]="characters?.length">
+    </ngb-pagination>
+  </div>  
+  </div>
+</div>

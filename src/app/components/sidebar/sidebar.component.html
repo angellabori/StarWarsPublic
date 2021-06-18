@@ -1,0 +1,21 @@
+
+<div class="logo">
+    <a class="simple-text logo-mini">
+      <div class="logo-img">
+          <img src="https://i.pinimg.com/originals/d1/83/63/d18363462c82abc36ddf5c8335f4ed89.png"/>
+      </div>
+    </a>
+    <a  class="simple-text logo-normal">
+        Star Wars
+    </a>
+</div>
+<div class="sidebar-wrapper">
+    <ul class="nav">
+        <li routerLinkActive="active" *ngFor="let menuItem of menuItems" class="{{menuItem.class}} nav-item">
+            <a [routerLink]="[menuItem.path]">
+                <i class="now-ui-icons {{menuItem.icon}}"></i>
+                <p>{{menuItem.title}}</p>
+            </a>
+        </li>
+    </ul>
+</div>
