@@ -10,7 +10,7 @@ import { Film } from '../models/film.interfaces';
 })
 export class DataService {
 
-  private REST_API_SERVER = "https://www.swapi.tech/api/";
+  private REST_API_SERVER = "https://swapi.dev/api/";
 
   constructor(private httpClient: HttpClient) { }
 
