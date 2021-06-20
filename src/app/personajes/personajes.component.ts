@@ -10,7 +10,7 @@ import { People } from '../models/people.interfaces';
 })
 export class UserProfileComponent implements OnInit {
   characters: any[];
-  page = 2;
+  page = 1;
   pageSize = 10;
   constructor(
     private rutaFilm: ActivatedRoute,

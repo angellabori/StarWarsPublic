@@ -13,7 +13,7 @@ import { AppComponent } from './app.component';
 
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 
-import { PeopleComponent } from './people/people.component';
+ 
 
 
 @NgModule({
@@ -29,8 +29,7 @@ import { PeopleComponent } from './people/people.component';
   ],
   declarations: [
     AppComponent,
-    AdminLayoutComponent,
-    PeopleComponent
+    AdminLayoutComponent
     
 
   ],
